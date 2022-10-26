@@ -198,17 +198,16 @@
         background-color: rgba(0, 0, 0, 0.358); 
     }
 
-    #contatos h1 {
+    footer h1 {
         margin-bottom: 20px;
     }
 
     #icones {
-        width: 100%;
         display: flex;
         flex-direction: row;
     }
 
-    #contatos p {
+    #mail {
         margin-top: 5px;
         font-size: 1.1em;
     }
@@ -222,8 +221,6 @@
         margin-top: 25px;
         height: 27px;
     }
-
-    #line-143 {display: none;}
 }
 /* 768 */
 @media screen and (min-width: 768px) {
@@ -272,10 +269,9 @@
         animation: rotation-html 15s;
         animation-iteration-count: infinite;
     }
-
     /* Animações */
 
-    @keyframes rotation-js {
+    /* @keyframes rotation-js {
         0% {
             transform: translate(0px, 0px);
         }
@@ -363,6 +359,10 @@
         100% {
             transform: translate(0px, 0px);
         }
+    } */
+
+    #sobre {
+        padding: 30px 70px 30px 70px;
     }
 
     .competencia {
@@ -375,36 +375,39 @@
         width: 400px;
     }
 
+    footer h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+
     #contatos {
         display: flex;
         flex-direction: row;
-        justify-content: space-between; 
-        align-items: stretch;
+        justify-content: space-between;
+        align-items: flex-end;
     }
 
-    #contatos h1 {
-        font-size: 3em;
-        margin-top: 35px;
-    }
-
-    #line-143 {
-        display: block;
+    #mail {
         font-size: 1.5em;
-        margin-top: 30px;
+        margin-top: 0px;
+        transform: translate(0px, -8px);
     }
-
-    #line-134  {display: none;}
 
     #icones {
-        justify-content: space-evenly;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
     }
 
     svg#linkedin {
-        height: 40px;
+        height: 70px;
+        width: 70px;
+        margin: 0px 20px 0px 20px;
     }
 
     svg#github {
-        height: 40px;
-        width: 40px;
+        height: 70px;
+        width: 70px;
+        margin: 0px 80px 0px 20px;
     }
 }
