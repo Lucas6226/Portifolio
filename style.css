@@ -1,0 +1,410 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;500;600;700;800;900&display=swap');
+
+@media screen {
+    * {
+        font-family: 'Outfit', 'Open Sans', Arial, Helvetica, sans-serif;
+        padding: 0;
+        margin: 0;
+        color: rgb(255, 255, 255);
+        text-shadow: 3px 3px 4px rgba(21, 21, 21, 0.436);
+        text-decoration: none;
+    }
+
+    body {
+        width: 100vw;
+        background-image: linear-gradient(180deg, #37fd6cf5, #3ea5ff, #37fd6cf5, #3ea5ff);
+    }
+
+    header {
+        background-color: rgba(0, 0, 0, 0.358);
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0px 3px 2px rgba(90, 90, 90, 0.402);
+    }
+
+    #header-left {
+        margin-left: 15px;
+        width: 50vw;
+    }
+
+    #header-left > h1 {
+        font-size: 3em;
+    }
+
+    #header-left > p {    
+        font-size: 1.1em;
+        font-weight: 100;
+        transform: translate(0, -10px);
+    }
+
+    #header-right {
+        margin: 20px 60px 0px 0px;
+    }
+
+    #header-right span {
+        font-size: 2.5rem;
+    }
+
+    #botao-menu {
+        position: absolute;
+    }
+
+    #botao-menu-2 {
+        position: absolute;
+        display: none;
+    }
+
+    #menu {
+        background-color: rgba(0, 0, 0, 0.813);
+        height: 100vh;
+        width: 100vw;
+        text-align: left;
+        
+        position: absolute;
+        position: fixed;
+        
+        display: none;
+    }
+    
+    #menu ul {
+        text-align: center;
+        font-size: 1.5em;
+        line-height: 4em;
+    }
+    
+    main h1 {
+        text-align: center;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .divisoria {
+        width: 100vw;
+        height: 2px;
+        background-image: linear-gradient(to right, #5286fe,rgba(255, 255, 255, 0), #0DFF20);
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.267);   
+    }
+
+    #inicio {
+        height: 300px;
+    }
+
+    #img1 {
+        height: 200px;
+        border-radius: 50%;
+        margin-bottom: 80px;
+
+        display: block;
+        margin: auto;
+    }
+    #img2{display: none;}
+    #img3{display: none;}
+    #img4{display: none;}
+    #img5{display: none;}
+
+    #sobre > p {
+        text-align: justify;
+        line-height: 25px;
+        font-size: 1.2em;
+        font-weight: 400;
+        padding-bottom: 30px;
+    }
+
+    #projetos h1 {
+        padding-bottom: 30px;
+    }
+
+    .projeto {
+        height: 150px;
+        width: 75vw;
+        margin: auto;
+        background-image: linear-gradient(120deg, rgba(13, 142, 255, 0.701), rgba(13, 250, 76, 0.7));
+        box-shadow: 4px 4px 5px rgba(60, 60, 60, 0.397);
+        padding: 15px;
+        margin-bottom: 50px;
+    }
+
+    .projeto h2 {
+        margin-bottom: 20px;
+    }
+
+    .img-projetos  {
+        display: block;
+        margin: auto;
+        width: 70vw;
+        height: 80px;
+        background-size: cover;
+        background-position: left center;
+    }
+
+    #logo-ali {background-image: url(assets/fotos/large-image.png);}
+    #calculadora {background-image: url(assets/fotos/large-image.png);}
+    #planetas {background-image: url(assets/fotos/large-image.png);}
+
+    #competencias h1, .pontos {
+        margin-bottom: 10px;
+    }
+
+    #competencias h2 {
+        font-weight: 400;
+        font-size: 1.2em;
+    }
+
+    .competencia span {
+        font-size: 1.25rem;
+    }
+
+    #currisulo {
+        align-items: center;
+    }
+
+    #curriculo h1 {
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 70px;
+    }
+
+    #botao {
+        display: block;
+        margin: auto;
+        text-align: center;
+
+        font-size: 1.2em;
+        width: 180px;
+        height: 60px;
+        padding-top: 7px;
+        border-radius: 20px;
+        margin-bottom: 60px;
+
+        background-color: #2424242f;
+        border: 2px solid rgba(97, 97, 97, 0.605);
+
+        box-shadow: 4px 4px 3px solid rgba(0, 0, 0, 0.804);
+    }
+
+    #botao span {
+        font-size: 2rem;
+        transform: translate(0px, 8px);
+    }
+
+    footer {
+        max-width: 100vw;
+        height: 150px;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.358); 
+    }
+
+    #contatos h1 {
+        margin-bottom: 20px;
+    }
+
+    #icones {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #contatos p {
+        margin-top: 5px;
+        font-size: 1.1em;
+    }
+
+    svg#linkedin {
+        margin-top: 25px;
+        height: 25px;
+    }
+
+    svg#github {
+        margin-top: 25px;
+        height: 27px;
+    }
+
+    #line-143 {display: none;}
+}
+/* 768 */
+@media screen and (min-width: 768px) {
+    
+    #inicio {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    #home-right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    #img1 {display: none;}
+    #img2 {
+        border-radius: 50%;
+        display: block;
+        height: 250px;
+    }
+
+    #img5 {
+        display: block;
+        height: 80px;
+        transition-delay: 5s;
+        animation: rotation-js 5s;
+        animation-iteration-count: infinite;
+    }
+
+    #img4 {
+        display: block;
+        height: 80px;
+        transition-delay: 3s;
+        animation: rotation-css 10s;
+        animation-iteration-count: infinite;
+    }
+
+    #img3 {
+        display: block;
+        height: 80px;
+        transition-delay: 0s;
+        animation: rotation-html 15s;
+        animation-iteration-count: infinite;
+    }
+
+    /* Animações */
+
+    @keyframes rotation-js {
+        0% {
+            transform: translate(0px, 0px);
+        }
+
+        10% {
+            transform: translate(-75px, -50px);
+        }
+
+        30% {
+            transform: translate(-100px, -50px);
+        }
+        
+        50% {
+            transform: translate(-150px, -0px);
+        }
+        
+        60% {
+            transform: translate(-100px, 50px);
+        }
+        
+        80% {
+            transform: translate(-50px, 50px);
+        }
+
+        100% {
+            transform: translate(0px, 0px);
+        }
+    }
+
+    @keyframes rotation-css {
+        0% {
+            transform: translate(0px, 0px);
+        }
+
+        10% {
+            transform: translate(-50px, -50px);
+        }
+
+        30% {
+            transform: translate(-100px, -50px);
+        }
+        
+        50% {
+            transform: translate(-150px, -0px);
+        }
+        
+        60% {
+            transform: translate(-100px, 75px);
+        }
+        
+        80% {
+            transform: translate(-30px, 50px);
+        }
+
+        100% {
+            transform: translate(0px, 0px);
+        }
+    }
+
+    @keyframes rotation-html {
+        0% {
+            transform: translate(0px, 0px);
+        }
+
+        10% {
+            transform: translate(-50px, -50px);
+        }
+
+        30% {
+            transform: translate(-75px, -50px);
+        }
+        
+        50% {
+            transform: translate(-170px, -0px);
+        }
+        
+        60% {
+            transform: translate(-100px, 50px);
+        }
+        
+        80% {
+            transform: translate(-50px, 75px);
+        }
+
+        100% {
+            transform: translate(0px, 0px);
+        }
+    }
+
+    .competencia {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #botao {
+        width: 400px;
+    }
+
+    #contatos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        align-items: stretch;
+    }
+
+    #contatos h1 {
+        font-size: 3em;
+        margin-top: 35px;
+    }
+
+    #line-143 {
+        display: block;
+        font-size: 1.5em;
+        margin-top: 30px;
+    }
+
+    #line-134  {display: none;}
+
+    #icones {
+        justify-content: space-evenly;
+    }
+
+    svg#linkedin {
+        height: 40px;
+    }
+
+    svg#github {
+        height: 40px;
+        width: 40px;
+    }
+}
