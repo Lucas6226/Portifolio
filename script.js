@@ -1,6 +1,6 @@
 function Clicou() {
     var botao1 = document.querySelector("span#botao-menu")
-    var fundo = document.querySelector("div#menu")
+    var fundo = document.querySelector("div#menu-mobile")
     var body = document.getElementsByTagName('body')[0]
     var botao2 = document.getElementById('botao-menu-2')
 

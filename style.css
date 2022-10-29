@@ -13,7 +13,7 @@
     }
 
     body {
-        width: 100vw;
+        max-width: 100%;
         background-image: linear-gradient(180deg, #37fd6cf5, #3ea5ff, #37fd6cf5, #3ea5ff);
     }
 
@@ -39,11 +39,12 @@
         transform: translate(0, -10px);
     }
 
-    #header-right {
+    #header-right-desktop {display: none;}
+    #header-right-mobile {
         margin: 20px 60px 0px 0px;
     }
 
-    #header-right span {
+    #header-right-mobile span {
         font-size: 2.5rem;
     }
 
@@ -56,19 +57,17 @@
         display: none;
     }
 
-    #menu {
+    #menu-mobile {
         background-color: rgba(0, 0, 0, 0.813);
         height: 100vh;
         width: 100vw;
-        text-align: left;
-        
         position: absolute;
-        position: fixed;
-        
         display: none;
+        left: 0%;
+        top: 0%;
     }
     
-    #menu ul {
+    #menu-mobile ul {
         text-align: center;
         font-size: 1.5em;
         line-height: 4em;
@@ -83,7 +82,7 @@
     }
 
     .divisoria {
-        width: 100vw;
+        width: 100%;
         height: 2px;
         background-image: linear-gradient(to right, #5286fe,rgba(255, 255, 255, 0), #0DFF20);
         box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.267);   
@@ -96,7 +95,8 @@
     #img1 {
         height: 200px;
         border-radius: 50%;
-        margin-bottom: 80px;
+        padding-top: 50px;
+        padding-bottom: 50px;
 
         display: block;
         margin: auto;
@@ -135,13 +135,14 @@
     .img-projetos  {
         display: block;
         margin: auto;
-        width: 70vw;
+        background-color: red;
+        width: 90%;
         height: 80px;
         background-size: cover;
         background-position: left center;
     }
 
-    #logo-ali {background-image: url(assets/fotos/large-image.png);}
+    #logo-ali {background-image: url(assets/fotos/LogoAli.png);}
     #calculadora {background-image: url(assets/fotos/large-image.png);}
     #planetas {background-image: url(assets/fotos/large-image.png);}
 
@@ -365,6 +366,12 @@
         padding: 30px 70px 30px 70px;
     }
 
+    .projeto:hover {
+        
+        background-image: linear-gradient(240deg, rgba(13, 142, 255, 0.701), rgba(13, 250, 76, 0.7));
+
+    }
+
     .competencia {
         display: flex;
         flex-direction: row;
@@ -376,8 +383,9 @@
     }
 
     footer h1 {
+        text-align: center;
         font-size: 2.5em;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 
     #contatos {
@@ -400,14 +408,92 @@
     }
 
     svg#linkedin {
-        height: 70px;
-        width: 70px;
+        height: 50px;
+        width: 50px;
         margin: 0px 20px 0px 20px;
     }
 
     svg#github {
-        height: 70px;
-        width: 70px;
+        height: 50px;
+        width: 50px;
         margin: 0px 80px 0px 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #header-left {
+        width: 20vw;
+    }
+    
+    #header-right-mobile {display: none;}
+    #header-right-desktop {
+        display: block;
+        align-items: left;
+    }
+
+    #header-right-desktop ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;   
+        margin-top: 35px;
+    }
+
+    #header-right-desktop ul li {
+        font-size: 1.3em;
+        text-align: center;
+        margin: 0px 15px 0px 15px;
+    }
+
+    #sobre {
+        font-size: 1.17em;
+    }
+
+    #competencias h2, .pontos {
+        font-size: 1.7em;
+    }
+
+    .projeto {
+        width: 28%;
+    }
+    
+    #projetos > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 40px;
+    }
+
+    footer h1 {
+        font-size: 2em;
+        width: 220px;
+    }
+
+    #mail {
+        font-size: 1.3em;
+    }
+
+    #contatos {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 700px;
+    }
+
+    svg#linkedin {
+        height: 35px;
+        width: 35px;
+        margin: 0px 20px 0px 20px;
+    }
+
+    svg#github {
+        height: 35px;
+        width: 35px;
+        margin: 0px 20px 0px 20px;
     }
 }
