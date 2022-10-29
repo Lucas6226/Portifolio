@@ -259,7 +259,7 @@
         display: block;
         height: 80px;
         transition-delay: 3s;
-        animation: rotation-css 10s;
+        animation: rotation-css 10s; 
         animation-iteration-count: infinite;
     }
 
