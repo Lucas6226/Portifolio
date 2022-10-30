@@ -125,7 +125,8 @@
         background-image: linear-gradient(120deg, rgba(13, 142, 255, 0.701), rgba(13, 250, 76, 0.7));
         box-shadow: 4px 4px 5px rgba(60, 60, 60, 0.397);
         padding: 15px;
-        margin-bottom: 50px;
+        margin-top: 50px;
+        border-radius: 10px;
     }
 
     .projeto h2 {
@@ -142,6 +143,23 @@
         background-position: left center;
     }
 
+    .projeto p {
+        text-align: right;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .proj-desc {
+        display: none;
+        background-image: linear-gradient(120deg, rgb(139, 201, 255), rgb(131, 255, 164));
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px rgba(126, 126, 126, 0.32);
+        margin: auto;
+        padding: 15px;
+        width: 75vw;
+        height: 70px;
+    }
+
     #logo-ali {background-image: url(assets/fotos/LogoAli.png);}
     #calculadora {background-image: url(assets/fotos/large-image.png);}
     #planetas {background-image: url(assets/fotos/large-image.png);}
@@ -153,6 +171,29 @@
     #competencias h2 {
         font-weight: 400;
         font-size: 1.2em;
+    }
+
+    .pontos {
+        position: relative;
+        display: inline-block;
+    }
+
+    .pontos .mensagem {
+        visibility: hidden;
+        width: 40px;
+        border-radius: 10px;
+        background-color: rgba(255, 252, 252, 0.616);
+        padding: 5px;
+
+        top: -5px;
+        right: 105%;
+
+        position: absolute;
+        z-index: 1;
+    } 
+
+    .pontos:hover .mensagem {
+        visibility: visible;
     }
 
     .competencia span {
@@ -374,7 +415,10 @@
 
     .projeto:hover {
         animation: gradient 2s ease infinite;
-        transform: scale(1.2, 1.2);
+    }
+
+    .proj-desc:hover .projeto {
+        animation: gradient 2s ease infinite;
     }
 
     @keyframes gradient {
@@ -423,6 +467,11 @@
         font-size: 1.5em;
         margin-top: 0px;
         transform: translate(0px, -8px);
+        transition-duration: .2s;
+    }
+
+    #mail:hover {
+        transform: translate(0px, -15px);
     }
 
     #icones {
@@ -438,7 +487,7 @@
     }
 
     svg#linkedin:hover {
-        transition-duration: 0.2s;
+        transition-duration: .2s;
         transform: translate(0px, -10px);
     }
 
@@ -449,7 +498,7 @@
     }
 
     svg#github:hover {
-        transition-duration: 0.2s;
+        transition-duration: .2s;
         transform: translate(0px, -10px);
     }
 }
@@ -469,13 +518,20 @@
         display: flex;
         flex-direction: row;
         list-style: none;   
-        margin-top: 35px;
+        margin-top: 25px;
+        margin-right: 15px;
     }
 
     #header-right-desktop ul li {
         font-size: 1.3em;
         text-align: center;
+        padding: 5px;
         margin: 0px 15px 0px 15px;
+    }
+
+    #header-right-desktop ul li a:hover {
+        border-bottom: 2px solid rgba(255, 255, 255, 0.326);
+        color: rgba(255, 255, 255, 0.648);
     }
 
     #sobre {
@@ -487,13 +543,22 @@
     }
 
     .projeto {
-        width: 28%;
+        width: 286px;
+        margin: 10px 5px 0px 5px;
+    }
+
+    .proj-desc {
+        z-index: 1;
+        position: absolute;
+        width: 286px;
+        margin: 0px 5px 10px 5px;
     }
     
-    #projetos > div {
+    #projetos>div {
         display: flex;
         flex-direction: row;
-        justify-content: stretch;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     footer {

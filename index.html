@@ -25,9 +25,9 @@
             </ul>
         </div>
         <div id="header-right-mobile">
-            <span class="material-symbols-outlined" id="botao-menu" onclick="Clicou()">menu</span>
+            <span class="material-symbols-outlined" id="botao-menu" onclick="UseMenu()">menu</span>
             <span class="material-symbols-outlined" id="botao-menu-2">menu_open</span>
-            <div id="menu-mobile" onclick="Clicou()">
+            <div id="menu-mobile" onclick="UseMenu()">
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">Quem sou eu</a></li>
@@ -62,23 +62,53 @@
         <section id="projetos">
             <h1>Alguns dos meus projetos</h1>
             <div>
-                <div class="projeto">
-                    <a href="https://lucas6226.github.io/Logo-ali/" target="_blank">
-                        <h2>Logo ali</h2>
-                        <div class="img-projetos" id="logo-ali"></div>
-                    </a>
+                <div class="caixa-projeto">
+                    <div class="projeto">
+                        <a href="https://lucas6226.github.io/Logo-ali/" target="_blank">
+                            <h2>Logo ali</h2>
+                            <div class="img-projetos" id="logo-ali"></div>
+                        </a>
+                        <p onclick="SeeMore1()">sobre</p>
+                    </div>
+                    <div class="proj-desc">
+                        O Logo ali é um site desenvolvido por min apenas para praticar e desenvolver melhores abilidades no HTML5 e CSS3  
+                    </div>
                 </div>
-                <div class="projeto">
-                    <a href="#" target="_blank">
-                        <h2>Calculadora</h2>
-                        <div class="img-projetos" id="calculadora"></div>
-                    </a>
+                <div>
+                    <div class="projeto">
+                        <a href="#" target="_blank">
+                            <h2>Calculadora</h2>
+                            <div class="img-projetos" id="calculadora"></div>
+                        </a>
+                        <p onclick="SeeMore2()">sobre</p>
+                    </div>
+                    <div class="proj-desc">
+                        A calculadora web foi feita apenas com JavaScript e HTML&CSS
+                    </div>
                 </div>
-                <div class="projeto">
-                    <a href="#" target="_blank">
-                        <h2>Planetas</h2>
-                        <div class="img-projetos" id="planetas"></div>
-                    </a>
+                <div>
+                    <div class="projeto">
+                        <a href="#" target="_blank">
+                            <h2>Planetas</h2>
+                            <div class="img-projetos" id="planetas"></div>
+                        </a>
+                        <p onclick="SeeMore3()">sobre</p>
+                    </div>
+                    <div class="proj-desc">
+
+                    </div>
+                </div>
+                <div>
+                    <div class="projeto">
+                        <a href="#" target="_blank">
+                            <h2>Formulario</h2>
+                            <div class="img-projetos" id="formulario"></div>
+                        </a>
+                        <p onclick="SeeMore4()">sobre</p>
+                    </div>
+                    <div class="proj-desc">
+                        Um formulario simples bonito e eficiente feito para cadastros 
+                    </div>
                 </div>
             </div>
         </section>
@@ -86,8 +116,9 @@
         <section id="competencias">
             <h1>Competencias</h1>
             <section class="competencia">
-                <h2><abbr title="06/10">HTML e CSS intermediarios</abbr></h2>
+                <h2>HTML e CSS intermediarios</h2>
                 <div class="pontos">
+                    <span class="mensagem">6/10</span>
                     <span class="material-symbols-outlined" class="circulos">radio_button_checked</span>
                     <span class="material-symbols-outlined" class="circulos">radio_button_checked</span>
                     <span class="material-symbols-outlined" class="circulos">radio_button_checked</span>
@@ -101,8 +132,9 @@
                 </div>
             </section>
             <section class="competencia">
-                <h2><abbr title="03/10">JavaScript basico</abbr></h2>
+                <h2>JavaScript basico</h2>
                 <div class="pontos">
+                    <span class="mensagem">3/10</span>
                     <span class="material-symbols-outlined" class="circulos">radio_button_checked</span>
                     <span class="material-symbols-outlined" class="circulos">radio_button_checked</span>
                     <span class="material-symbols-outlined" class="circulos">radio_button_checked</span>
@@ -116,8 +148,9 @@
                 </div>
             </section>
             <section class="competencia">
-                <h2><abbr title="03/10">Ingles basico</abbr></h2>
+                <h2>Ingles basico</h2>
                 <div class="pontos">
+                    <span class="mensagem">3/10</span>
                     <span class="material-symbols-outlined" class="circulos">radio_button_checked</span>
                     <span class="material-symbols-outlined" class="circulos">radio_button_checked</span>
                     <span class="material-symbols-outlined" class="circulos">radio_button_checked</span>
