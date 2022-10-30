@@ -236,11 +236,16 @@
         padding-top: 7px;
         border-radius: 20px;
         margin-bottom: 60px;
-
         background-color: #2424242f;
-        border: 2px solid rgba(97, 97, 97, 0.605);
 
-        box-shadow: 4px 4px 3px solid rgba(0, 0, 0, 0.804);
+        border: 10px solid;
+        border-image-slice: 1;
+        border-width: 2px;
+        border-image-source: linear-gradient(100deg, #617dbf, #37fd6cf5);
+
+        /* border: 2px solid rgba(97, 97, 97, 0.605); */
+        /* border: 2px solid linear; */
+        /* box-shadow: 4px 4px 3px solid rgba(0, 0, 0, 0.804); */
     }
 
     #botao span {
@@ -518,6 +523,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+    #inicio {
+        height: 80vh;
+    }
+    
     #header-left {
         width: 20vw;
     }
@@ -550,10 +559,15 @@
 
     #sobre {
         font-size: 1.17em;
+        line-height: 6.5em;
     }
 
-    #competencias h2, .pontos {
-        font-size: 1.7em;
+    #projetos {
+        height: 97vh;
+    }
+
+    #projetos h1 {
+        margin-top: 17vh;
     }
 
     .projeto {
@@ -573,6 +587,20 @@
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
+    }
+
+    #competencias {
+        padding-top: 20vh;
+        height: 60vh;
+    }
+
+    #competencias h2, .pontos {
+        font-size: 1.7em;
+    }
+
+    #curriculo {
+        padding-top: 20vh;
+        height: 50vh;
     }
 
     footer {
