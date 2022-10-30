@@ -562,6 +562,10 @@
         color: rgba(255, 255, 255, 0.648);
     }
 
+    #img2 {
+        height: 320px;
+    }
+
     #sobre {
         font-size: 1.17em;
         line-height: 6.5em;
