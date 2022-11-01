@@ -8,7 +8,7 @@
         padding: 0;
         margin: 0;
         color: rgb(255, 255, 255);
-        /* text-shadow: 3px 3px 4px rgba(21, 21, 21, 0.436); */
+        text-shadow: 3px 3px 4px rgba(21, 21, 21, 0.436);    
         text-decoration: none;
     }
 
@@ -189,28 +189,14 @@
         font-size: 1.2em;
     }
 
+    .icone {display: none;}
+
     .pontos {
         position: relative;
         display: inline-block;
     }
 
-    .pontos .mensagem {
-        visibility: hidden;
-        width: 40px;
-        border-radius: 10px;
-        background-color: rgba(255, 252, 252, 0.616);
-        padding: 5px;
-
-        top: -5px;
-        right: 105%;
-
-        position: absolute;
-        z-index: 1;
-    } 
-
-    .pontos:hover .mensagem {
-        visibility: visible;
-    }
+    .mensagem {display: none;}
 
     .competencia span {
         font-size: 1.25rem;
@@ -459,10 +445,36 @@
         }
     }
 
+    .pontos .mensagem {
+        visibility: hidden;
+        width: fit-content;
+        border-radius: 10px;
+        background-color: rgba(255, 252, 252, 0.616);
+        padding: 5px;
+
+        top: -5px;
+        right: 105%;
+
+        position: absolute;
+        z-index: 1;
+    } 
+
+    .pontos:hover .mensagem {
+        visibility: visible;
+        display: block;
+        display: flex;
+        justify-content: center;
+    }
+
     .competencia {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    .icone {
+        display: inline;
+        height: 30px;
     }
 
     #botao {
@@ -535,7 +547,6 @@
     svg#github:hover {
         transition-duration: .2s;
         transform: translate(0px, -10px);
-        text-shadow: 20px 20px 30px blue;
     }
 }
 
